@@ -1,5 +1,38 @@
 @use "./../01-abstracts/" as *;
 
 .feature {
-  padding: 85px 32px 78px;
+  padding: 85px 0 78px;
+
+  &__top {
+    margin: auto;
+    margin-bottom: 76px;
+    max-width: 540px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-weight: 275;
+    font-size: rem(24px);
+    line-height: rem(36px);
+    letter-spacing: rem(0.166667px);
+    margin-bottom: 1px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: rem(24px);
+    line-height: rem(36px);
+    letter-spacing: rem(0.166667px);
+    margin-bottom: 13px;
+  }
+
+  &__text {
+    opacity: 0.5;
+    letter-spacing: rem(0.104167px);
+  }
+
+  &__cards {
+    display: grid;
+    gap: 25px;
+  }
 }

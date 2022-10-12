@@ -1,22 +1,34 @@
 import { useState } from "react";
+import iconKarma from "/src/images/icon-karma.svg";
+import iconSupervisor from "/src/images/icon-supervisor.svg";
+import iconCalculator from "/src/images/icon-calculator.svg";
+import iconTeam from "/src/images/icon-team-builder.svg";
 
 function App() {
   var cardsInfo = [
     {
       title: "Supervisor",
       text: "Monitors activity to identify project roadblocks",
+      color: "teal",
+      img: iconSupervisor,
     },
     {
       title: "Team Builder",
       text: "Scans our talent network to create the optimal team for your project",
+      color: "red",
+      img: iconTeam,
     },
     {
       title: "Karma",
       text: "Regularly evaluates our talent to ensure quality",
+      color: "yellow",
+      img: iconKarma,
     },
     {
       title: "Calculator",
       text: "Uses data from past projects to provide better delivery estimates",
+      color: "blue",
+      img: iconCalculator,
     },
   ];
   return (
@@ -34,9 +46,14 @@ function App() {
       <section className="feature__cards">
         {cardsInfo.map(function renderCard(cardInfo) {
           return (
-            <article className="card">
+            <article className={`card card--${cardInfo.color}`}>
               <h3 className="card__title">{cardInfo.title}</h3>
               <p className="card__text">{cardInfo.text}</p>
+              <img
+                className="card__icon"
+                src={cardInfo.img}
+                alt={`${cardInfo.title} icon`}
+              />
             </article>
           );
         })}

@@ -1,1 +1,8 @@
 @use "./../01-abstracts/" as *;
+
+body {
+  background-color: #fafafa;
+  padding: 0 32px;
+  min-height: 100vh;
+  min-width: 100vw;
+}
