@@ -44,9 +44,12 @@ function App() {
       </section>
 
       <section className="feature__cards">
-        {cardsInfo.map(function renderCard(cardInfo) {
+        {cardsInfo.map(function renderCard(cardInfo, i) {
           return (
-            <article className={`card card--${cardInfo.color}`}>
+            <article
+              key={`card--${i}`}
+              className={`card card--${cardInfo.color}`}
+            >
               <h3 className="card__title">{cardInfo.title}</h3>
               <p className="card__text">{cardInfo.text}</p>
               <img

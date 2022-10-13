@@ -2,12 +2,20 @@
 
 .feature {
   padding: 85px 0 78px;
+  max-width: 1110px;
+  margin: auto;
+  @include breakpoint($lg) {
+    padding: 80px 0;
+  }
 
   &__top {
     margin: auto;
     margin-bottom: 76px;
     max-width: 540px;
     text-align: center;
+    @include breakpoint($lg) {
+      margin-bottom: 64px;
+    }
   }
 
   &__subtitle {
@@ -16,6 +24,12 @@
     line-height: rem(36px);
     letter-spacing: rem(0.166667px);
     margin-bottom: 1px;
+    @include breakpoint($lg) {
+      font-size: rem(36px);
+      line-height: rem(54px);
+      letter-spacing: rem(0.25px);
+      margin-bottom: -2px;
+    }
   }
 
   &__title {
@@ -24,6 +38,11 @@
     line-height: rem(36px);
     letter-spacing: rem(0.166667px);
     margin-bottom: 13px;
+    @include breakpoint($lg) {
+      font-size: rem(36px);
+      line-height: rem(54px);
+      letter-spacing: rem(0.25px);
+    }
   }
 
   &__text {
@@ -34,5 +53,30 @@
   &__cards {
     display: grid;
     gap: 25px;
+    @include breakpoint($lg) {
+      row-gap: 0;
+      column-gap: 30px;
+      grid-template-rows: 140px 110px 30px 110px 140px;
+      grid-template-columns: repeat(3, 1fr);
+
+      & > :nth-child(1) {
+        grid-row-start: 2;
+      }
+
+      & > :nth-child(2) {
+        grid-row-start: 1;
+        grid-column-start: 2;
+      }
+
+      & > :nth-child(3) {
+        grid-row-start: 4;
+        grid-column-start: 2;
+      }
+
+      & > :nth-child(4) {
+        grid-row-start: 2;
+        grid-column-start: 3;
+      }
+    }
   }
 }
