@@ -31,7 +31,7 @@ Users should be able to:
 
 - Solution URL: [https://www.frontendmentor.io/solutions/four-card-feature-section-with-react-OcaF6MTRDY](https://www.frontendmentor.io/solutions/four-card-feature-section-with-react-OcaF6MTRDY)
 
-- Live Site URL: [https://four-card-feature-section-6pftaxzhd-miguelzaga.vercel.app/](https://four-card-feature-section-6pftaxzhd-miguelzaga.vercel.app/)
+- Live Site URL: [https://four-card-feature-section-two-gamma.vercel.app/](https://four-card-feature-section-two-gamma.vercel.app/)
 
 ## My process
 
