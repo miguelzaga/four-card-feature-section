@@ -25,12 +25,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/four-card-feature-section-with-react-OcaF6MTRDY] (https://www.frontendmentor.io/solutions/four-card-feature-section-with-react-OcaF6MTRDY)
+- Live Site URL: [https://four-card-feature-section-6pftaxzhd-miguelzaga.vercel.app/](https://four-card-feature-section-6pftaxzhd-miguelzaga.vercel.app/)
 
 ## My process
 
